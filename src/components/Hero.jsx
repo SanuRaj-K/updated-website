@@ -4,6 +4,7 @@ import github from "../assets/icons/icons8-github-48.png";
 import linkedin from "../assets/icons/icons8-linkedin-24.png";
 import location from "../assets/icons/icons8-location-16 (2).png";
 import About from "./About";
+import Skills from "./Skills";
 function Hero() {
   return (
     <div className=" bg-white mt-3   ">
@@ -63,6 +64,7 @@ function Hero() {
         </div>
       </div>
       <About />
+      <Skills />
     </div>
   );
 }
