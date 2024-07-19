@@ -6,18 +6,20 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="relative">
       <Toaster position="top-right" reverseOrder={false} />
-      <Header />
-      <div className="py-8 bg-white  px-4">
+      <Header id={''} />
+      <main className="py-8 bg-white  px-4">
         <Hero id={"home"} />
         <About id={"about"} />
         <Skills id={"skills"} />
         <Portfolio id={"projects"} />
         <Contact id={"contact"} />
-      </div>
+      </main>
+      <Footer />
     </div>
   );
 }
