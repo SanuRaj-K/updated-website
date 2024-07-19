@@ -1,6 +1,7 @@
 import React from "react";
 
 function Header() {
+  const headerContent = ["home", "about", "skills", "portfolio", "contact"];
   return (
     <div>
       <header className=" flex  pt-4 justify-between items-center  ">
@@ -11,27 +12,16 @@ function Header() {
         </div>
         <div className="hidden sm:flex">
           <ul className=" flex ">
-            <li className=" hover:text-white ">
-              <a href="*">Home</a>
-            </li>
-            <li className=" ml-3 hover:text-white">
-              <a href="*">About</a>
-            </li>
-            <li className=" ml-3 hover:text-white">
-              <a href="*">Skills</a>
-            </li>
-            <li className=" ml-3 hover:text-white">
-              <a href="*">Portfolio</a>
-            </li>
-            <li className=" ml-3 hover:text-white">
-              <a href="*">Contact</a>
-            </li>
+            {headerContent.map((item, index) => (
+              <li className=" capitalize first:ml-0 ml-3 hover:text-white" key={index}>
+                {item}
+              </li>
+            ))}
           </ul>
         </div>
         <div className="   drawer-end sm:hidden">
           <input id="my-drawer" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content">
-            {/* Page content here */}
             <label htmlFor="my-drawer" className="  drawer-button">
               Menu
             </label>
@@ -43,21 +33,11 @@ function Header() {
               className="drawer-overlay"
             ></label>
             <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-              <li>
-                <a href="*">Home</a>
-              </li>
-              <li>
-                <a href="*">About</a>
-              </li>
-              <li>
-                <a href="*">Resume</a>
-              </li>
-              <li>
-                <a href="*">Portfolio </a>
-              </li>
-              <li>
-                <a href="*">Contact</a>
-              </li>
+              {headerContent.map((item, index) => (
+                <li className=" capitalize" key={index}>
+                  <a href="*">{item}</a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

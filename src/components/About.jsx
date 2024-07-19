@@ -1,20 +1,16 @@
 import React from "react";
 import heroTwo from "../assets/images/max-duzij-qAjJk-un3BI-unsplash.jpg";
+import Button from "./Button";
 function About() {
   return (
     <div className=" pt-9">
       <div className=" flex justify-center  ">
-        <button className="p-[3px] my-3 relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-          <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
-            About
-          </div>
-        </button>
+        <Button content={"About"} />
       </div>
       <div className=" md:flex justify-between mt-10  ">
         <div className=" md:w-[50%]">
           <img
-            className="md:h-[600px] rounded-xl h-[550px] w-[530px]  mx-auto md:w-[570px]"
+            className="md:h-[600px] rounded-xl h-[300px] w-[280px] sm:h-[550px] sm:w-[520px]  mx-auto md:w-[570px]"
             src={heroTwo}
             alt="Herotwo"
           />

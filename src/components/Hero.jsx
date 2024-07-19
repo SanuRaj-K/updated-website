@@ -5,6 +5,7 @@ import linkedin from "../assets/icons/icons8-linkedin-24.png";
 import location from "../assets/icons/icons8-location-16 (2).png";
 import About from "./About";
 import Skills from "./Skills";
+import Portfolio from "./Portfolio";
 function Hero() {
   return (
     <div className=" bg-white mt-3   ">
@@ -65,6 +66,7 @@ function Hero() {
       </div>
       <About />
       <Skills />
+      <Portfolio />
     </div>
   );
 }
