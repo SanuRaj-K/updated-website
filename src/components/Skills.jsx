@@ -2,11 +2,11 @@ import React from "react";
 import skillsData from "../data/skills";
 import Button from "./Button";
 
-function Skills() {
+function Skills({id}) {
 
   
   return (
-    <div className=" px-4 py-10">
+    <div id={id} className=" px-4 py-10">
       <div>
         <div className=" flex justify-center mb-4   ">
           <Button content={'Skills'}/>

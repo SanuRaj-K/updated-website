@@ -3,13 +3,10 @@ import image from "../assets/images/SanuRaj-cropped.jpeg";
 import github from "../assets/icons/icons8-github-48.png";
 import linkedin from "../assets/icons/icons8-linkedin-24.png";
 import location from "../assets/icons/icons8-location-16 (2).png";
-import About from "./About";
-import Skills from "./Skills";
-import Portfolio from "./Portfolio";
-import Contact from "./Contact";
-function Hero() {
+
+function Hero({ id }) {
   return (
-    <div className=" bg-white mt-3   ">
+    <div id={id} className=" mt-3 pb-6   ">
       <div className=" pt-2 md:flex justify-between items-center flex-row-reverse">
         <div>
           <div className=" py-4 ">
@@ -65,10 +62,6 @@ function Hero() {
           </div>
         </div>
       </div>
-      <About />
-      <Skills />
-      <Portfolio />
-      <Contact />
     </div>
   );
 }

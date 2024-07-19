@@ -3,9 +3,9 @@ import Button from "./Button";
 import call from "../assets/icons/icons8-call-96.png";
 import mail from "../assets/icons/icons8-mail-96.png";
 
-function Contact() {
+function Contact({id}) {
   return (
-    <div className=" mt-16">
+    <div className=" mt-16" id={id}>
       <div className=" flex justify-center  ">
         <Button content={"Get in touch"} />
       </div>

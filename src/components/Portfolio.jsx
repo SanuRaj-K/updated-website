@@ -2,10 +2,10 @@ import React from "react";
 import Button from "./Button";
 import { projectData } from "../data/projectsData";
 import LinkButton from "./LinkButton";
- 
-function Portfolio() {
+
+function Portfolio({ id }) {
   return (
-    <div className=" px-3 pt-10">
+    <div id={id} className=" px-3 pt-10">
       <div className=" flex justify-center  ">
         <Button content={"Portfolio"} />
       </div>
@@ -28,7 +28,7 @@ function Portfolio() {
               />
             </div>
             <div className={`w-1/2 px-5 text-center md:text-left`}>
-              <h2 className=" text-[30px] text-black font-bold">    
+              <h2 className=" text-[30px] text-black font-bold">
                 {item.title}
               </h2>
               <p className=" py-3      max-w-[500px] ">{item.description}</p>
@@ -44,9 +44,7 @@ function Portfolio() {
           </div>
         ))}
       </div>
-     <div>
-       
-     </div>
+      <div></div>
     </div>
   );
 }

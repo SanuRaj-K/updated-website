@@ -2,9 +2,9 @@ import React from "react";
 import heroTwo from "../assets/images/max-duzij-qAjJk-un3BI-unsplash.jpg";
 import Button from "./Button";
 import LinkButton from "./LinkButton";
-function About() {
+function About({ id }) {
   return (
-    <div className=" pt-9">
+    <div id={id} className=" pt-9">
       <div className=" flex justify-center  ">
         <Button content={"About"} />
       </div>
@@ -35,11 +35,12 @@ function About() {
             <br />
           </p>
           <div className=" pt-4">
-          <LinkButton url={'https://mern.tiiny.site/'} content={'Visit my CV'}/>
+            <LinkButton
+              url={"https://mern.tiiny.site/"}
+              content={"Visit my CV"}
+            />
           </div>
-         
         </div>
-        
       </div>
     </div>
   );
