@@ -6,6 +6,7 @@ import location from "../assets/icons/icons8-location-16 (2).png";
 import About from "./About";
 import Skills from "./Skills";
 import Portfolio from "./Portfolio";
+import Contact from "./Contact";
 function Hero() {
   return (
     <div className=" bg-white mt-3   ">
@@ -67,6 +68,7 @@ function Hero() {
       <About />
       <Skills />
       <Portfolio />
+      <Contact />
     </div>
   );
 }

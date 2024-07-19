@@ -16,8 +16,8 @@ function Portfolio() {
         {projectData.map((item, index) => (
           <div
             key={index}
-            className={`flex justify-between py-8 items-center ${
-              index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+            className={`flex  justify-between flex-col  md:flex-row       py-8 items-center ${
+              index % 2 === 0 ? "md:flex-row  " : "md:flex-row-reverse  "
             }`}
           >
             <div className="w-1/2  bg-[#F5F0EF] rounded-md">
@@ -27,14 +27,14 @@ function Portfolio() {
                 className=" w-[80%] mx-auto p-10 rounded-2xl h-[80%]"
               />
             </div>
-            <div className="w-1/2 px-5">
-              <h2 className=" text-[30px] text-black font-bold">
+            <div className={`w-1/2 px-5 text-center md:text-left`}>
+              <h2 className=" text-[30px] text-black font-bold">    
                 {item.title}
               </h2>
-              <p className=" py-3   max-w-[500px] ">{item.description}</p>
-              <div className=" flex">
+              <p className=" py-3      max-w-[500px] ">{item.description}</p>
+              <div className=" flex flex-col  md:flex-row items-center ">
                 <LinkButton url={item.frontend} content={"Frontend"} />
-                <div className=" px-3">
+                <div className=" px-3 py-3 md:py-0">
                   <LinkButton url={item.backend} content={"Backend"} />
                 </div>
 
@@ -44,6 +44,9 @@ function Portfolio() {
           </div>
         ))}
       </div>
+     <div>
+       
+     </div>
     </div>
   );
 }

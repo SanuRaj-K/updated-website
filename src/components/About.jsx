@@ -1,6 +1,7 @@
 import React from "react";
 import heroTwo from "../assets/images/max-duzij-qAjJk-un3BI-unsplash.jpg";
 import Button from "./Button";
+import LinkButton from "./LinkButton";
 function About() {
   return (
     <div className=" pt-9">
@@ -33,7 +34,12 @@ function About() {
             products end to end, from ideation all the way to development.{" "}
             <br />
           </p>
+          <div className=" pt-4">
+          <LinkButton url={'https://mern.tiiny.site/'} content={'Visit my CV'}/>
+          </div>
+         
         </div>
+        
       </div>
     </div>
   );
