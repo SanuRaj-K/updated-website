@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 function App() {
   return (
-    <div className="relative">
+    <div className="relative  bg-black">
       <Toaster position="top-right" reverseOrder={false} />
       <Header id={''} />
       <main className="py-8 bg-white  px-4">
