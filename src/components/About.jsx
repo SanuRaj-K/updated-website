@@ -29,10 +29,9 @@ function About({ id }) {
             Frontend Developer intern in 2022, and since then, I've continued to
             grow and evolve as a developer, taking on new challenges and
             learning the new technologies along the way. I am building
-            cuting-edge web applications using modern technologies. <br />{" "}
+            cuting-edge web applications using modern technologies. <br /> 
             <br />I am very much a progressive thinker and enjoy working on
-            products end to end, from ideation all the way to development.{" "}
-            <br />
+            products end to end, from ideation all the way to development. 
           </p>
           <div className=" pt-4">
             <LinkButton
