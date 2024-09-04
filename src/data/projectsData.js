@@ -40,4 +40,14 @@ export const projectData = [
     image:
       "https://res.cloudinary.com/dgoermgtp/image/upload/v1716806289/Projects/todo-logo_twpge2.jpg",
   },
+  {
+    title: "User Dashboard",
+    description:
+      "Crafted an Fully responsive user dashboard using reactjs and TailwindCSS",
+    frontend: "https://github.com/SanuRaj-K/Dashboard",
+    backend: "false",
+    live: "https://dashboard-peach-chi-77.vercel.app",
+    image:
+      "https://res.cloudinary.com/dgoermgtp/image/upload/v1725423528/Projects/Screenshot_2024-09-04_094822_mcqokt.png",
+  },
 ];
