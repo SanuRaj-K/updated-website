@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ContactForm from "./components/ContactForm";
 function App() {
   return (
     <div className="relative  bg-black">
@@ -18,6 +19,7 @@ function App() {
         <Skills id={"skills"} />
         <Portfolio id={"projects"} />
         <Contact id={"contact"} />
+        <ContactForm/>
       </main>
       <Footer />
     </div>
