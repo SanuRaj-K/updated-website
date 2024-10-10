@@ -2,7 +2,7 @@ import React from 'react'
 
 function RoundAnimation() {
   return (
-    <div>RoundAnimation</div>
+    <div> </div>
   )
 }
 
