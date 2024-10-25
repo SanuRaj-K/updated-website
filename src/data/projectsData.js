@@ -53,7 +53,7 @@ export const projectData = [
   {
     title: "Rent-up",
     description:
-      "Creating  an Fully responsive  property rent site using Nextjs and TailwindCSS",
+      "Creating  an Fully responsive  property rent site using Nextjs and TailwindCSS. Users can find properties in this site.",
     frontend: "https://github.com/SanuRaj-K/rent-up",
     backend: "false",
     live: "https://rent-up-five.vercel.app/",
