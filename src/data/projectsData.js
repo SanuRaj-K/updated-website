@@ -50,4 +50,14 @@ export const projectData = [
     image:
       "https://res.cloudinary.com/dgoermgtp/image/upload/v1725423528/Projects/Screenshot_2024-09-04_094822_mcqokt.png",
   },
+  {
+    title: "Rent-up",
+    description:
+      "Creating  an Fully responsive  property rent site using Nextjs and TailwindCSS",
+    frontend: "https://github.com/SanuRaj-K/rent-up",
+    backend: "false",
+    live: "https://rent-up-five.vercel.app/",
+    image:
+      "https://res.cloudinary.com/dgoermgtp/image/upload/v1729832396/Projects/Screenshot_2024-10-25_102823_ksndkd.png",
+  },
 ];
