@@ -1,5 +1,25 @@
 export const projectData = [
   {
+    title: "Haawoo",
+    description:
+      "Created a fully responsive website for an icecream shop.Used Reactjs + materialUi + tailwindCSS + framer motion",
+    frontend: "false",
+    backend: "false",
+    live: "https://haavoo.vercel.app/",
+    image:
+      "https://res.cloudinary.com/dgoermgtp/image/upload/v1730433850/Projects/Screenshot_2024-11-01_093239_rbdhci.png",
+  },
+  {
+    title: "Rent-up",
+    description:
+      "Creating  an Fully responsive  property rent site using Nextjs and TailwindCSS. Users can find properties in this site.",
+    frontend: "https://github.com/SanuRaj-K/rent-up",
+    backend: "false",
+    live: "https://rent-up-five.vercel.app/",
+    image:
+      "https://res.cloudinary.com/dgoermgtp/image/upload/v1729832396/Projects/Screenshot_2024-10-25_102823_ksndkd.png",
+  },
+  {
     title: "amazon-clone",
     description: `Created an Amazon clone website involves replicating the core
       functionalities and features of the original Amazon platform.
