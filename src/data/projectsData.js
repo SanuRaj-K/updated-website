@@ -34,7 +34,7 @@ export const projectData = [
   {
     title: "Blogs-up",
     description: `   Blogsup is a Social media platform. Users can Read blogs and
-      interact with that blogs by giving like and comment.`,
+      interact with that blogs by giving like and comment. `,
     frontend: "https://github.com/SanuRaj-K/blog-s_up_frontEnd",
     backend: "https://github.com/SanuRaj-K/blog-s_up-backend",
     live: "https://blogsup.shop/",
