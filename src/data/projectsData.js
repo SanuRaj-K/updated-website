@@ -2,7 +2,7 @@ export const projectData = [
   {
     title: "Haawoo",
     description:
-      "Created a fully responsive website for an icecream shop.Used Reactjs + materialUi + tailwindCSS + framer motion",
+      "Created a fully responsive website for an icecream shop.Used Reactjs + materialUi + tailwindCSS + framer motion.",
     frontend: "false",
     backend: "false",
     live: "https://haavoo.vercel.app/",
