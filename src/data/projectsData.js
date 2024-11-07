@@ -5,7 +5,7 @@ export const projectData = [
       "Created a fully responsive website for an icecream shop.Used Reactjs + materialUi + tailwindCSS + framer motion.",
     frontend: "false",
     backend: "false",
-    live: "https://haavoo.vercel.app/",
+    live: "https://haawoo.vercel.app/",
     image:
       "https://res.cloudinary.com/dgoermgtp/image/upload/v1730433850/Projects/Screenshot_2024-11-01_093239_rbdhci.png",
   },
