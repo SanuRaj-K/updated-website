@@ -1,5 +1,25 @@
 export const projectData = [
   {
+    title: "Altergraphics",
+    description:
+      "Altergraphics is a Digital Marketing company. This is my Freelance work",
+    frontend: "false",
+    backend: "false",
+    live: "https://altergraphics.vercel.app",
+    image:
+      "https://res.cloudinary.com/dgoermgtp/image/upload/v1730958187/Projects/Screenshot_2024-11-07_111159_korahe.png",
+  },
+  {
+    title: "Skaktech",
+    description:
+      "Crafted a fully responsive website using Nextjs and Framer motion.",
+    frontend: "false",
+    backend: "false",
+    live: "https://skaktech.vercel.app/",
+    image:
+      "https://res.cloudinary.com/dgoermgtp/image/upload/v1730958419/Projects/Screenshot_2024-11-07_111644_umiqdh.png",
+  },
+  {
     title: "Haawoo",
     description:
       "Created a fully responsive website for an icecream shop.Used Reactjs + materialUi + tailwindCSS + framer motion.",
@@ -70,5 +90,4 @@ export const projectData = [
     image:
       "https://res.cloudinary.com/dgoermgtp/image/upload/v1725423528/Projects/Screenshot_2024-09-04_094822_mcqokt.png",
   },
-   
 ];
