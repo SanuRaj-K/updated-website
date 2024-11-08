@@ -7,17 +7,17 @@ function LinkButton({ url, content }) {
       toast.error(
         content === "Live"
           ? `Project is not live...😕`
-          : `No ${content} code...😕`
+          : `No ${content} code / Its a private code`
       );
     } else {
       window.open(url, "_blank");
     }
   };
   return (
-    <div>
+    <div className=" hover:-translate-y-2 duration-500">
       <button
         onClick={handleClick}
-        className="px-8 py-2  bg-black text-white text-sm rounded-md font-semibold hover:bg-black/[0.8] hover:shadow-lg"
+        className="px-8 py-2  bg-black text-white text-sm rounded-md font-semibold   hover:shadow-lg"
       >
         {content}
       </button>

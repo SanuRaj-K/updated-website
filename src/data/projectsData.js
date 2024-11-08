@@ -30,6 +30,16 @@ export const projectData = [
       "https://res.cloudinary.com/dgoermgtp/image/upload/v1730433850/Projects/Screenshot_2024-11-01_093239_rbdhci.png",
   },
   {
+    title: "Devdocs",
+    description:
+      "Devdocs in a API documentation website. The developers can find how to use that api in their projects.",
+    frontend: "false",
+    backend: "false",
+    live: "https://devdocs-mu.vercel.app/",
+    image:
+      "https://res.cloudinary.com/dgoermgtp/image/upload/v1731047909/Projects/Screenshot_2024-11-08_120723_gjiiu6.png",
+  },
+  {
     title: "Rent-up",
     description:
       "Creating  an Fully responsive  property rent site using Nextjs and TailwindCSS. Users can find properties in this site.",
