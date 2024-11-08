@@ -41,6 +41,10 @@ const skillsData = [
       image: require('../assets/icons/express-js-icon.svg').default,
     },
     {
+      name: "Nextjs",
+      image: require('../assets/icons/nextjs.svg').default,
+    },
+    {
       name: "Postman",
       image: require('../assets/icons/postman.svg').default,
     },

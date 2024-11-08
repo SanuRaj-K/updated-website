@@ -16,13 +16,13 @@ function Skills({id}) {
         </h3>
       </div>
       <div>
-        <div className="  grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6">
+        <div className=" my-10  grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6">
           {skillsData.map((item, index) => (
             <div className=" flex flex-col   items-center hover:text-black cursor-pointer hover:font-bold  " key={index}>
               <img
                 src={item.image}
                 alt={item.name}
-                className=" h-16 w-16 hover:animate-spin my-3 "
+                className=" rounded-md size-10 hover:animate-spin my-3 "
               ></img>
               <div>{item.name}</div>
             </div>

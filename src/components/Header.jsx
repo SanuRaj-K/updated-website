@@ -9,7 +9,7 @@ function Header({ id }) {
     }
   };
   return (
-    <div id={id} className=" fixed top-0 left-0 w-full   shadow-md z-10 px-4  ">
+    <div id={id} className=" fixed top-0 left-0 w-full   shadow-md z-10    ">
       <header className=" flex  bg-black w-full px-5 rounded-lg h-[60px] justify-between items-center  ">
         <div className=" text-white">
           <a href={`#${id}`}>
