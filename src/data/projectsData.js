@@ -40,6 +40,16 @@ export const projectData = [
       "https://res.cloudinary.com/dgoermgtp/image/upload/v1731047909/Projects/Screenshot_2024-11-08_120723_gjiiu6.png",
   },
   {
+    title: "Miro",
+    description:
+      "Miro is a visual workspace for innovation where teams of any size can dream, design, and build their future together. Simply put, we're here to help you create the next big thing by providing a powerful space where your team can collaborate seamlessly — even if you aren't in the same room.",
+    frontend: "false",
+    backend: "false",
+    live: "https://miro-123.netlify.app/",
+    image:
+      "https://res.cloudinary.com/dgoermgtp/image/upload/v1731486132/Projects/Screenshot_2024-11-13_135111_de3bye.png",
+  },
+  {
     title: "Rent-up",
     description:
       "Creating  an Fully responsive  property rent site using Nextjs and TailwindCSS. Users can find properties in this site.",
