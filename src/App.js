@@ -12,11 +12,11 @@ import RoundAnimation from "./components/RoundAnimation";
 import Experiences from "./components/experiences";
 import Loader from "./components/loader";
 import { useEffect, useState } from "react";
-import { ReactGAImplementation } from "react-ga4";
+import ReactGA from "react-ga4";
 import TrackPageView from "./components/track-page-view";
 function App() {
-  ReactGAImplementation.initialize("G-PW0JRT1WS2");
-  ReactGAImplementation.send("pageview");
+  ReactGA.initialize("G-PW0JRT1WS2");
+  ReactGA.send("pageview");
 
   const [isLoading, setIsLoading] = useState(true);
 
