@@ -39,7 +39,7 @@ function Portfolio({ id }) {
                 <div className=" px-3 py-3 md:py-0">
                   <LinkButton url={item.backend} content={"Backend"} />
                 </div>
-                <div  className=" flex-1">
+                <div  className=" flex-1 md:mt-3 xl:mt-0 ">
                   <LinkButton url={item.live} content={"Live"} />
                 </div>
               </div>

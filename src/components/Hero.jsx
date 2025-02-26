@@ -11,17 +11,17 @@ function Hero({ id }) {
         <div>
           <div className=" py-4 ">
             <img
-              className=" h-[50%]  mx-auto w-[80%]  rounded-xl "
+              className=" h-[50%]  mx-auto md:w-[80%]  rounded-xl "
               src={image}
               alt="avatar"
             />
           </div>
         </div>
         <div className="  p-3">
-          <h1 className=" text-black mb-2 text-[30px] font-bold">
-            Hi, I'am SanuRaj 👋
+          <h1 className=" text-black mb-2  text-[24px] md:text-[30px] font-bold">
+            Hi, I'am SanuRaj. K 👋
           </h1>
-          <p className=" text-[12px] md:text-[16px]">
+          <p className=" text-[12px]  md:text-[16px]">
             As a full stack developer specializing in the MERN stack (MongoDB,
             Express.js, React, Node.js), I have a strong passion for creating
             efficient and scalable web applications. With extensive experience

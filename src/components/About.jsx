@@ -4,20 +4,20 @@ import Button from "./Button";
 import LinkButton from "./LinkButton";
 function About({ id }) {
   return (
-    <div id={id} className=" pt-9">
+    <div id={id} className=" py-9">
       <div className=" flex justify-center  ">
         <Button content={"About"} />
       </div>
-      <div className=" md:flex justify-between mt-10  ">
+      <div className=" md:flex justify-between mt-10 items-center  ">
         <div className=" md:w-[50%]">
           <img
-            className="md:h-[600px] rounded-xl h-[300px] w-[280px] sm:h-[550px] sm:w-[520px]  mx-auto md:w-[570px]"
+            className="md:h-[600px] rounded-xl h-[300px]   w-full sm:h-[550px] sm:w-[520px]  mx-auto md:w-[570px]"
             src={heroTwo}
             alt="Herotwo"
           />
         </div>
         <div className=" md:w-[50%]  py-8 md:mx-auto  md:py-0 md:ml-4 mx-4">
-          <h1 className=" text-[30px] mb-4  text-black font-bold">
+          <h1 className=" text-[24px] md:text-[30px] mb-4  text-black font-bold">
             Curious About Me....? Here You Have It :)
           </h1>
           <p className=" w-full text-[12px] md:text-[16px] md:w-[80%]">
