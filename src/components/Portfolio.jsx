@@ -5,7 +5,7 @@ import LinkButton from "./LinkButton";
 
 function Portfolio({ id }) {
   return (
-    <div id={id} className=" px-3 pt-10">
+    <div id={id} className=" px-3 pt-10 ">
       <div className=" flex justify-center  ">
         <Button content={"Portfolio"} />
       </div>
@@ -20,25 +20,28 @@ function Portfolio({ id }) {
               index % 2 === 0 ? "md:flex-row  " : "md:flex-row-reverse  "
             }`}
           >
-            <div className="w-1/2  bg-[#F5F0EF] rounded-md">
+            <div className="md:w-1/2  w-full bg-[#F5F0EF] rounded-md">
               <img
                 src={item.image}
                 alt={item.title}
-                className=" w-[80%] mx-auto p-10 rounded-2xl h-[80%]"
+                className=" w-[80%] mx-auto p-2 md:p-5 rounded-2xl h-[80%]"
               />
             </div>
-            <div className={`w-1/2 px-5 text-center md:text-left`}>
+            <div className={` w-full md:w-1/2 px-5 text-center md:text-left`}>
               <h2 className=" text-[30px] text-black font-bold">
                 {item.title}
               </h2>
-              <p className=" py-3      max-w-[500px] ">{item.description}</p>
-              <div className=" flex flex-col  md:flex-row items-center ">
+              <p className=" py-3     w-full  md:max-w-[500px] ">
+                {item.description}
+              </p>
+              <div className=" flex flex-wrap justify-center items-center ">
                 <LinkButton url={item.frontend} content={"Frontend"} />
                 <div className=" px-3 py-3 md:py-0">
                   <LinkButton url={item.backend} content={"Backend"} />
                 </div>
-
-                <LinkButton url={item.live} content={"Live"} />
+                <div  className=" flex-1">
+                  <LinkButton url={item.live} content={"Live"} />
+                </div>
               </div>
             </div>
           </div>

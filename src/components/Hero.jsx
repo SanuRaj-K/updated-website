@@ -21,7 +21,7 @@ function Hero({ id }) {
           <h1 className=" text-black mb-2 text-[30px] font-bold">
             Hi, I'am SanuRaj 👋
           </h1>
-          <p>
+          <p className=" text-[12px] md:text-[16px]">
             As a full stack developer specializing in the MERN stack (MongoDB,
             Express.js, React, Node.js), I have a strong passion for creating
             efficient and scalable web applications. With extensive experience
@@ -51,11 +51,6 @@ function Hero({ id }) {
                   target="_blank"
                 >
                   <img src={linkedin} alt="linkedin" />
-                </a>
-              </li>
-              <li className=" h-5 w-5">
-                <a href="*">
-                  <img src="" alt="" />
                 </a>
               </li>
             </ul>

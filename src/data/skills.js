@@ -21,12 +21,17 @@ const skillsData = [
       image: require('../assets/icons/react-js-icon.svg').default,
     },
     {
-      name: "Typescript",
-      image: require('../assets/icons/typescript.svg').default,
+      name: "Nextjs",
+      image: require('../assets/icons/nextjs.svg').default,
     },
+    
     {
       name: "TailwindCSS",
       image: require('../assets/icons/icons8-tailwindcss.svg').default,
+    },
+    {
+      name: "Typescript",
+      image: require('../assets/icons/typescript.svg').default,
     },
     {
       name: "MongoDB",
@@ -40,10 +45,7 @@ const skillsData = [
       name: "ExpressJs",
       image: require('../assets/icons/express-js-icon.svg').default,
     },
-    {
-      name: "Nextjs",
-      image: require('../assets/icons/nextjs.svg').default,
-    },
+    
     {
       name: "Postman",
       image: require('../assets/icons/postman.svg').default,

@@ -20,7 +20,7 @@ function About({ id }) {
           <h1 className=" text-[30px] mb-4  text-black font-bold">
             Curious About Me....? Here You Have It :)
           </h1>
-          <p className=" md:w-[80%]">
+          <p className=" w-full text-[12px] md:text-[16px] md:w-[80%]">
             I am a passionate, self proclimed developer, who specialises in Full
             Stack Developement (MERN). I am very enthusiastic about bringing the
             technical and visual aspects of digital products to life. User
@@ -29,13 +29,13 @@ function About({ id }) {
             Frontend Developer intern in 2022, and since then, I've continued to
             grow and evolve as a developer, taking on new challenges and
             learning the new technologies along the way. I am building
-            cuting-edge web applications using modern technologies. <br /> 
+            cuting-edge web applications using modern technologies. <br />
             <br />I am very much a progressive thinker and enjoy working on
-            products end to end, from ideation all the way to development. 
+            products end to end, from ideation all the way to development.
           </p>
           <div className=" pt-4">
             <LinkButton
-              url={"https://mern.tiiny.site/"}
+              url={"https://sanuraj-frontend.tiiny.site"}
               content={"Visit my CV"}
             />
           </div>

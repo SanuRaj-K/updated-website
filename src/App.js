@@ -9,21 +9,50 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
 import RoundAnimation from "./components/RoundAnimation";
+import Experiences from "./components/experiences";
+import Loader from "./components/loader";
+import { useEffect, useState } from "react";
+import { ReactGAImplementation } from "react-ga4";
+import TrackPageView from "./components/track-page-view";
 function App() {
+  ReactGAImplementation.initialize("G-PW0JRT1WS2");
+  ReactGAImplementation.send("pageview");
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <div className="relative  bg-black">
-      <Toaster position="top-right" reverseOrder={false} />
-      <Header id={""} />
-      <main className="py-8 bg-white  px-4">
-        <Hero id={"home"} />
-        <About id={"about"} />
-        <Skills id={"skills"} />
-        <RoundAnimation />
-        <Portfolio id={"projects"} />
-        <Contact id={"contact"} />
-        <ContactForm />
-      </main>
-      <Footer />
+      <TrackPageView />
+      {isLoading ? (
+        <div className=" h-screen  w-full flex items-center justify-center content-center">
+          <Loader />
+        </div>
+      ) : (
+        <>
+          <Toaster position="top-right" reverseOrder={false} />
+          <Header id={""} />
+
+          <main className="py-8 bg-white  px-4">
+            <Hero id={"home"} />
+            <About id={"about"} />
+
+            <Skills id={"skills"} />
+            <Experiences id={"experiences"} />
+            <RoundAnimation />
+            <Portfolio id={"projects"} />
+            <Contact id={"contact"} />
+            <ContactForm />
+          </main>
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
