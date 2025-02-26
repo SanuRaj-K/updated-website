@@ -12,11 +12,7 @@ import RoundAnimation from "./components/RoundAnimation";
 import Experiences from "./components/experiences";
 import Loader from "./components/loader";
 import { useEffect, useState } from "react";
-import ReactGA from "react-ga4";
-import TrackPageView from "./components/track-page-view";
 function App() {
-  ReactGA.initialize("G-PW0JRT1WS2");
-  ReactGA.send("pageview");
 
   const [isLoading, setIsLoading] = useState(true);
 
@@ -29,7 +25,7 @@ function App() {
 
   return (
     <div className="relative  bg-black">
-      <TrackPageView />
+  
       {isLoading ? (
         <div className=" h-screen  w-full flex items-center justify-center content-center">
           <Loader />
