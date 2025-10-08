@@ -32,7 +32,7 @@ function Hero({ id }) {
           <div className=" py-4">
             <div className=" flex items-center mb-2">
               <img className=" h-5 w-5 " src={location} alt="location" />
-              <h4 className=" ml-2 font-semibold">Malappuram, Kerala</h4>
+              <h4 className=" ml-2 font-semibold">Bangalore</h4>
             </div>
             <ul className=" flex ">
               <li className=" h-5 w-5 ">
