@@ -60,11 +60,11 @@ improvements, and aligning development with business goals.
   {
     company: "Digievo Labs",
     link: "digievolabs.com",
-    position: "Frontend Developer ",
+    position: "Product Engineer ",
     logo: digievo,
     duration: "2024 december to present ",
     description: [
-      "Working on LinkHQ, a cutting-edge e-commerce platform designed for onlinecreators.",
+      "Working on LinkHQ and Lexoga, a cutting-edge e-commerce platform designed for onlinecreators.",
       `Developed a sleek and responsive UI using Next.js, Tailwind CSS, and Material UI
   for a seamless user experience.
   `,
