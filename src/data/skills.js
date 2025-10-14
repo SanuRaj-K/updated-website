@@ -42,6 +42,11 @@ const skillsData = [
       image: require('../assets/icons/nodejs.svg').default,
     },
     {
+      name: "Python",
+      image: require('../assets/icons/python-svgrepo-com.svg').default,
+    },
+
+    {
       name: "ExpressJs",
       image: require('../assets/icons/express-js-icon.svg').default,
     },
