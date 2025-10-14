@@ -1,5 +1,15 @@
 export const projectData = [
   {
+    title: "Partyfun-uae",
+    description:
+      "Partyfun Event Mangagement UAE",
+    frontend: "false",
+    backend: "false",
+    live: "https://www.partyfunuae.com/",
+    image:
+      "https://res.cloudinary.com/dgoermgtp/image/upload/v1760425409/Projects/Screenshot_2025-10-14_123048_petfgu.png",
+  },
+  {
     title: "Altergraphics",
     description:
       "Altergraphics is a Digital Marketing company. This is my Freelance work",
