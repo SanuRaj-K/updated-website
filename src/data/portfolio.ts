@@ -36,6 +36,23 @@ export const portfolioData = {
   ],
 
   projects: [
+     {
+  title: "Sack-in-Seat",
+  description:
+    "Theatre-based food ordering app that allows users to order snacks directly to their seats with real-time order tracking and seamless payment integration.",
+  tech: [
+    "React",
+    "Tailwind CSS",
+    "TypeScript",
+    "React Native",
+    "Nodejs",
+    "Expressjs",
+    "MongoDB"
+  ],
+  github: " ",
+  live: "https://snack-in-seat.vercel.app/",
+  featured: true,
+},
     {
       title: "Lexoga ",
       description:
