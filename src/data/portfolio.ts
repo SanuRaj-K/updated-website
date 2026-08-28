@@ -4,7 +4,7 @@ export const portfolioData = {
   tagline:
     "Building modern web experiences with clean code and creative design.",
   email: "sanurajk55@gmail.com",
-  location: "India",
+  location: "India ",
   about: `I'm a passionate Full Stack Developer who loves crafting elegant solutions to complex problems.
   I specialize in building modern web applications with a focus on performance, accessibility, and great user experiences.
   When I'm not coding, I enjoy exploring new technologies and contributing to open-source projects.`,
