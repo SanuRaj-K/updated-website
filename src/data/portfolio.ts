@@ -16,7 +16,7 @@ export const portfolioData = {
 
   skills: [
     { name: "React", category: "Frontend" },
-     { name: "React Native", category: "Frontend" },
+    { name: "React Native", category: "Frontend" },
     { name: "Next.js", category: "Frontend" },
     { name: "TypeScript", category: "Frontend" },
     { name: "Tailwind CSS", category: "Frontend" },
@@ -25,6 +25,7 @@ export const portfolioData = {
     { name: "Node.js", category: "Backend" },
     { name: "Express.js", category: "Backend" },
     { name: "Python", category: "Backend" },
+    { name: "FastAPI", category: "Backend" },
     { name: "REST APIs", category: "Backend" },
     { name: "MongoDB", category: "Database" },
 
