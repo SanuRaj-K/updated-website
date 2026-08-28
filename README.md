@@ -4,9 +4,12 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 First, run the development server:
 
+<<<<<<< HEAD
 Copy `.env.example` to `.env.local` and replace `your_project_id` with the ID
 from your Microsoft Clarity project under **Settings > Overview**.
 
+=======
+>>>>>>> af7bd3cd4c73dff233cbbd61b2c0fc344986bdf5
 ```bash
 npm run dev
 # or

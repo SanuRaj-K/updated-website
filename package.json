@@ -9,7 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@microsoft/clarity": "^1.0.2",
+=======
+>>>>>>> af7bd3cd4c73dff233cbbd61b2c0fc344986bdf5
     "@vercel/analytics": "^2.0.1",
     "framer-motion": "^12.36.0",
     "lucide-react": "^0.577.0",
