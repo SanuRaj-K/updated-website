@@ -7,7 +7,7 @@ import { MicrosoftClarity } from "@/components/MicrosoftClarity";
 import { portfolioData } from "@/data/portfolio";
 
 const GA_ID = "G-PW0JRT1WS2";
-const CLARITY_PROJECT_ID = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID;
+const CLARITY_PROJECT_ID = process.env.CLARITY_PROJECT_ID;
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
