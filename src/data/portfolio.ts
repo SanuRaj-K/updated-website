@@ -16,6 +16,7 @@ export const portfolioData = {
 
   skills: [
     { name: "React", category: "Frontend" },
+     { name: "React", category: "Frontend" },
     { name: "React Native", category: "Frontend" },
     { name: "Next.js", category: "Frontend" },
     { name: "TypeScript", category: "Frontend" },
