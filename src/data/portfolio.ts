@@ -1,253 +1,42 @@
 export const portfolioData = {
   name: "Sanu Raj",
-  role: "Full Stack Developer",
-  tagline:
-    "Building modern web experiences with clean code and creative design.",
+  initials: "SR",
+  role: "Product Engineer",
+  tagline: "I design and build dependable digital products—from thoughtful interfaces to the systems behind them.",
   email: "sanurajk55@gmail.com",
-  location: "India",
-  about: `I'm a passionate Full Stack Developer who loves crafting elegant solutions to complex problems.
-  I specialize in building modern web applications with a focus on performance, accessibility, and great user experiences.
-  When I'm not coding, I enjoy exploring new technologies and contributing to open-source projects.`,
-
+  location: "Kerala, India",
+  availability: "Open to product engineering opportunities",
+  about: "I’m a product-minded engineer who enjoys turning complex workflows into clear, useful software. My work spans interface design, frontend architecture, APIs, and data—always with an eye on the people using the product.",
   social: {
     github: "https://github.com/SanuRaj-K",
     linkedin: "https://www.linkedin.com/in/sanu-raj-k/",
   },
-
-  skills: [
-    { name: "React", category: "Frontend" },
-    { name: "React Native", category: "Frontend" },
-    { name: "Next.js", category: "Frontend" },
-    { name: "TypeScript", category: "Frontend" },
-    { name: "Tailwind CSS", category: "Frontend" },
-    { name: "JavaScript", category: "Frontend" },
-    { name: "HTML/CSS", category: "Frontend" },
-    { name: "Node.js", category: "Backend" },
-    { name: "Express.js", category: "Backend" },
-    { name: "Python", category: "Backend" },
-    { name: "FastAPI", category: "Backend" },
-    { name: "REST APIs", category: "Backend" },
-    { name: "MongoDB", category: "Database" },
-
-    { name: "Firebase", category: "Database" },
-    { name: "Git", category: "Tools" },
-    { name: "Docker", category: "Tools" },
-    { name: "Vercel", category: "Tools" },
-    { name: "AWS", category: "Tools" },
-    { name: "Figma", category: "Tools" },
+  capabilities: [
+    { index: "01", title: "Product development", description: "Shaping ambiguous requirements into focused features and shipping them across the stack.", tools: ["Next.js", "React", "TypeScript", "React Native"] },
+    { index: "02", title: "Systems & APIs", description: "Building maintainable services, integrations, and real-time workflows for growing products.", tools: ["Node.js", "Express", "Python", "FastAPI", "Socket.IO"] },
+    { index: "03", title: "Data & delivery", description: "Working from persistence to production with pragmatic tooling and reliable deployment.", tools: ["MongoDB", "Firebase", "Docker", "AWS", "Vercel"] },
   ],
-
   projects: [
-    {
-      title: "AlterDo",
-      description: `Developed Alterdo, a responsive workspace
-  management platform featuring role-based access,
-  task tracking, attendance, leave management,
-  payroll, finance, client management, calendars,
-  support tickets, and real-time notifications.
-  Built with Next.js, TypeScript, Tailwind CSS,
-  Firebase, and TanStack Query.`,
-      tech: [
-        `Next.js`,
-        `TypeScript`,
-        `Tailwind CSS`,
-        `Firebase`,
-        `TanStack Query`,
-        `Node.js`,
-        `TypeScript`,
-        `Express.js`,
-        `MongoDB`,
-        `Mongoose`,
-        `Cloudinary`,
-        `ExcelJS`,
-        ` Socket.IO`,
-        `Node-Cron`,
-        `Multer`,
-        `Nodemailer`,
-        `Vitest`,
-        `Supertest`,
-      ],
-      github: " ",
-      live: "https://alterdo-ui.vercel.app/",
-      featured: true,
-    },
-    {
-      title: "Sack-in-Seat",
-      description:
-        "Theatre-based food ordering app that allows users to order snacks directly to their seats with real-time order tracking and seamless payment integration.",
-      tech: [
-        "React",
-        "Tailwind CSS",
-        "TypeScript",
-        "React Native",
-        "Nodejs",
-        "Expressjs",
-        "MongoDB",
-      ],
-      github: " ",
-      live: "https://snack-in-seat.vercel.app/",
-      featured: true,
-    },
-    {
-      title: "Lexoga ",
-      description:
-        "Job listing platform UI with advanced filtering, search, and responsive design.",
-      tech: [
-        "React",
-        "Tailwind CSS",
-        "TypeScript",
-        "Python",
-        "FastApi",
-        "Firebase",
-        "Mongodb",
-      ],
-      github: " ",
-      live: "https://lexoga.com",
-      featured: false,
-    },
-    {
-      title: "AlterGraphics",
-      description:
-        "Creative agency website with animations, portfolio showcase and contact form.",
-      tech: ["Next.js", "Framer Motion", "Tailwind CSS"],
-      github: "https://github.com/sanuraj/altergraphics",
-      live: "https://altergraphics.in",
-      featured: false,
-    },
-    {
-      title: "Linkhq ",
-      description:
-        "An ecommerce platform built for creators to sell digital and physical products, manage storefronts, track orders, and monetize their audience with ease.",
-      tech: [
-        "React",
-        "Tailwind CSS",
-        "TypeScript",
-        "Python",
-        "FastApi",
-        "Firebase",
-        "Mongodb",
-      ],
-      github: " ",
-      live: "https://linkhq.com",
-      featured: false,
-    },
-    {
-      title: "Fintrack",
-      description: "A webapp to calculate monthly icome and revenue.",
-      tech: [
-        "Next.js",
-        "Node.js",
-        "MongoDB",
-        "Tailwind CSS",
-        "Python",
-        "FastApi",
-      ],
-      github: "",
-      live: "https://fintrack-personal.vercel.app/",
-      featured: true,
-    },
-
-    {
-      title: "Edusto",
-      description:
-        "A full-featured ecommerce platform with product listings, cart management, secure checkout, order tracking, and an admin dashboard for inventory and sales management.",
-      tech: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
-      github: "",
-      live: " https://v0-edusto-e-commerce-site.vercel.app/",
-      featured: true,
-    },
-    {
-      title: "Dashboard Manager",
-      description:
-        "Personal finance tracker with budgeting tools, expense categorization, charts and monthly reports.",
-      tech: ["React", "Tailwind CSS", "Chart.js"],
-      github: " ",
-      live: "https://dashboard-peach-chi-77.vercel.app/",
-      featured: true,
-    },
-    {
-      title: "Rentup",
-      description:
-        "A modern real estate platform to browse, filter, and discover rental properties with detailed listings, location info, and a clean property search experience.",
-      tech: ["Next.js", "Tailwind Css", "TypeScript"],
-      github: "",
-      live: "https://rent-up-five.vercel.app/",
-      featured: true,
-    },
-    {
-      title: "Hawoo ",
-      description:
-        "A delightful ice cream shop website with an interactive menu, flavour showcase, and online ordering experience.",
-      tech: [
-        "React",
-        "Tailwind CSS",
-        "TypeScript",
-        "Python",
-        "FastApi",
-        "Firebase",
-        "Mongodb",
-      ],
-      github: " ",
-      live: "https://haawoo.vercel.app/",
-      featured: false,
-    },
+    { title: "AlterDo", eyebrow: "Workplace operations platform", summary: "A responsive workspace platform that brings people operations, finance, projects, and client work into one connected system.", contribution: "Built role-based workflows spanning task tracking, attendance, leave, payroll, calendars, support tickets, and real-time notifications.", tech: ["Next.js", "TypeScript", "Node.js", "MongoDB", "Socket.IO"], live: "https://alterdo-ui.vercel.app/", image: "/projects/alterdo.png", featured: true },
+    { title: "Sack-in-Seat", eyebrow: "In-theatre ordering experience", summary: "A mobile-first food ordering experience that lets cinema guests order refreshments without leaving their seats.", contribution: "Designed an end-to-end ordering flow with real-time status updates and payment-ready checkout across web and mobile.", tech: ["React", "React Native", "TypeScript", "Node.js", "MongoDB"], live: "https://snack-in-seat.vercel.app/", image: "/projects/sack-in-seat.png", featured: true },
+    { title: "Lexoga", eyebrow: "Job discovery platform", summary: "A focused job platform that helps candidates move from broad searches to relevant opportunities quickly.", contribution: "Created responsive discovery, search, and filtering experiences supported by a full-stack application architecture.", tech: ["React", "TypeScript", "FastAPI", "Firebase", "MongoDB"], live: "https://lexoga.com", image: "/projects/lexoga.png", featured: true },
+    { title: "AlterGraphics", eyebrow: "Creative agency website", summary: "An animated portfolio and lead-generation site for a creative studio.", tech: ["Next.js", "Framer Motion", "Tailwind CSS"], live: "https://altergraphics.in", featured: false },
+    { title: "Fintrack", eyebrow: "Personal finance utility", summary: "A web app for understanding monthly income and revenue at a glance.", tech: ["Next.js", "Node.js", "MongoDB"], live: "https://fintrack-personal.vercel.app/", featured: false },
+    { title: "Edusto", eyebrow: "E-commerce platform", summary: "A storefront with checkout, order tracking, inventory, and sales management.", tech: ["Next.js", "Node.js", "MongoDB"], live: "https://v0-edusto-e-commerce-site.vercel.app/", featured: false },
+    { title: "Dashboard Manager", eyebrow: "Finance dashboard", summary: "A personal finance tracker for budgets, expenses, and monthly reporting.", tech: ["React", "Tailwind CSS", "Chart.js"], live: "https://dashboard-peach-chi-77.vercel.app/", featured: false },
+    { title: "Rentup", eyebrow: "Property discovery", summary: "A clean rental marketplace for browsing and filtering property listings.", tech: ["Next.js", "TypeScript", "Tailwind CSS"], live: "https://rent-up-five.vercel.app/", featured: false },
+    { title: "Hawoo", eyebrow: "Food & hospitality", summary: "An inviting ice-cream shop experience with menu and ordering journeys.", tech: ["React", "TypeScript", "FastAPI"], live: "https://haawoo.vercel.app/", featured: false },
   ],
-
   experience: [
-    {
-      role: "Product Engineer",
-      company: "Digievo Labs",
-      period: "April 2025 – Present",
-      description:
-        "Working as a Product Engineer building and scaling products. Based in Kannur, Kerala, India.",
-    },
-    {
-      role: "Product Engineer 1",
-      company: "Lexoga",
-      period: "April 2025 – Present",
-      description:
-        "Contributing as a Product Engineer on core product development and feature delivery.",
-    },
-    {
-      role: "Frontend Developer",
-      company: "Digievo Labs",
-      period: "November 2024 – March 2025",
-      description:
-        "Developed and maintained frontend interfaces using modern web technologies. Based in Kannur, Kerala, India.",
-    },
-    {
-      role: "Frontend Developer",
-      company: "Sacrosys Technologies",
-      period: "September 2024 – November 2024",
-      description:
-        "Worked on frontend development projects at Sacrosys Technologies. Based in Kozhikode, Kerala, India.",
-    },
-    {
-      role: "MERN Stack Developer Intern",
-      company: "Bridgeon",
-      period: "July 2023 – August 2024",
-      description:
-        "Built full-stack web applications using MongoDB, Express, React, and Node.js. Based in Calicut, Kerala, India.",
-    },
-    {
-      role: "Frontend Developer Intern",
-      company: "Talrop",
-      period: "March 2022 – May 2023",
-      description:
-        "Gained hands-on experience in frontend development, working on real-world projects. Based in Kochi, Kerala, India.",
-    },
+    { role: "Product Engineer", company: "Digievo Labs", period: "Apr 2025 — Present", description: "Building and scaling customer-facing products across the stack." },
+    { role: "Product Engineer I", company: "Lexoga", period: "Apr 2025 — Present", description: "Contributing to core product development and feature delivery." },
+    { role: "Frontend Developer", company: "Digievo Labs", period: "Nov 2024 — Mar 2025", description: "Developed and maintained interfaces with modern web technologies." },
+    { role: "Frontend Developer", company: "Sacrosys Technologies", period: "Sep 2024 — Nov 2024", description: "Delivered frontend experiences for client products." },
+    { role: "MERN Stack Developer Intern", company: "Bridgeon", period: "Jul 2023 — Aug 2024", description: "Built full-stack applications using MongoDB, Express, React, and Node.js." },
+    { role: "Frontend Developer Intern", company: "Talrop", period: "Mar 2022 — May 2023", description: "Developed production skills through hands-on frontend projects." },
   ],
-
   education: [
-    {
-      degree: "Bachelor of Commerce (BCom) — Computer Application",
-      institution: "Amal College of Advanced Studies, Malappuram - Kerala",
-      year: "2020 – 2023",
-    },
-    {
-      degree: "Computer Commerce",
-      institution: "GHSS Vaniyambalam,Malappuram - Kerala",
-      year: "2020 – 2023",
-    },
+    { degree: "BCom, Computer Applications", institution: "Amal College of Advanced Studies, Malappuram", year: "2020 — 2023" },
+    { degree: "Computer Commerce", institution: "GHSS Vaniyambalam, Malappuram", year: "Completed 2020" },
   ],
-};
+} as const;

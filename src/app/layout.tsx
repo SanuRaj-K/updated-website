@@ -7,7 +7,7 @@ import { MicrosoftClarity } from "@/components/MicrosoftClarity";
 import { portfolioData } from "@/data/portfolio";
 
 const GA_ID = "G-PW0JRT1WS2";
-const CLARITY_PROJECT_ID = process.env.CLARITY_PROJECT_ID;
+const CLARITY_PROJECT_ID = process.env.CLARITY_PROJECT_ID ?? "xxxx";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -53,12 +53,10 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0a0a0f] text-slate-200 noise-bg`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased grain`}
       >
         {children}
-        {CLARITY_PROJECT_ID ? (
-          <MicrosoftClarity projectId={CLARITY_PROJECT_ID} />
-        ) : null}
+        <MicrosoftClarity projectId={CLARITY_PROJECT_ID} />
         <Analytics />
       </body>
     </html>
