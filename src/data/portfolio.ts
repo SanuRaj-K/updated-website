@@ -39,6 +39,39 @@ export const portfolioData = {
 
   projects: [
     {
+      title: "AlterDo",
+      description: `Developed Alterdo, a responsive workspace
+  management platform featuring role-based access,
+  task tracking, attendance, leave management,
+  payroll, finance, client management, calendars,
+  support tickets, and real-time notifications.
+  Built with Next.js, TypeScript, Tailwind CSS,
+  Firebase, and TanStack Query.`,
+      tech: [
+        `Next.js`,
+        `TypeScript`,
+        `Tailwind CSS`,
+        `Firebase`,
+        `TanStack Query`,
+        `Node.js`,
+        `TypeScript`,
+        `Express.js`,
+        `MongoDB`,
+        `Mongoose`,
+        `Cloudinary`,
+        `ExcelJS`,
+        ` Socket.IO`,
+        `Node-Cron`,
+        `Multer`,
+        `Nodemailer`,
+        `Vitest`,
+        `Supertest`,
+      ],
+      github: " ",
+      live: "https://alterdo-ui.vercel.app/",
+      featured: true,
+    },
+    {
       title: "Sack-in-Seat",
       description:
         "Theatre-based food ordering app that allows users to order snacks directly to their seats with real-time order tracking and seamless payment integration.",
