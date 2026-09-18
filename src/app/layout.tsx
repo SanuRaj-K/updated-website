@@ -5,9 +5,10 @@ import Script from "next/script";
 import "./globals.css";
 import { MicrosoftClarity } from "@/components/MicrosoftClarity";
 import { portfolioData } from "@/data/portfolio";
+import { siteUrl } from "@/data/site";
 
 const GA_ID = "G-PW0JRT1WS2";
-const CLARITY_PROJECT_ID = process.env.CLARITY_PROJECT_ID ?? "xxxx";
+const CLARITY_PROJECT_ID = process.env.CLARITY_PROJECT_ID ?? "";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,14 +21,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: siteUrl ? new URL(siteUrl) : undefined,
   title: `${portfolioData.name} — ${portfolioData.role}`,
-  description: portfolioData.tagline,
-  keywords: ["portfolio", "developer", "full stack", "react", "nextjs"],
+  description:
+    "Sanu Raj is a Product Engineer and Full-Stack Developer building modern web applications, AI-powered products, and backend systems with Next.js, Python, and Azure.",
+  keywords: [
+    "Sanu Raj",
+    "Product Engineer",
+    "Full-Stack Developer",
+    "React",
+    "Next.js",
+    "Python",
+    "AI integrations",
+  ],
   authors: [{ name: portfolioData.name }],
+  alternates: siteUrl ? { canonical: siteUrl } : undefined,
   openGraph: {
     title: `${portfolioData.name} — ${portfolioData.role}`,
     description: portfolioData.tagline,
     type: "website",
+    siteName: "Sanu Raj — Product Engineer",
+    locale: "en_IN",
+    url: siteUrl,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sanu Raj — Product Engineer",
+    description: portfolioData.tagline,
   },
 };
 
@@ -53,7 +73,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased grain`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
         <MicrosoftClarity projectId={CLARITY_PROJECT_ID} />

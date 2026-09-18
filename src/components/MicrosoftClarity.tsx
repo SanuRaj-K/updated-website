@@ -9,7 +9,8 @@ type MicrosoftClarityProps = {
 
 export function MicrosoftClarity({ projectId }: MicrosoftClarityProps) {
   useEffect(() => {
-    Clarity.init(projectId);
+    if (projectId && projectId !== "xxxx" && projectId !== "your_project_id")
+      Clarity.init(projectId);
   }, [projectId]);
 
   return null;

@@ -1,39 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+﻿# Sanu Raj — Product Engineer portfolio
 
-## Getting Started
+A custom Next.js App Router portfolio using React, TypeScript, Tailwind CSS, and Lucide icons. Most sections render on the server; navigation and native project dialogs provide the client interactions. No additional runtime dependencies were added for the redesign.
 
-First, run the development server:
+## Run locally
 
-Copy `.env.example` to `.env.local` and replace `your_project_id` with the ID
-from your Microsoft Clarity project under **Settings > Overview**.
-
-```bash
+```sh
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. On Windows with PowerShell script execution disabled, use `npm.cmd` instead of `npm`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Content and project links
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/data/project-links.ts`: replace the two Instagram Comment Picker placeholder URLs here. Placeholder notices disappear automatically once both URLs have been replaced.
+- `src/data/featured-projects.ts`: featured project descriptions, features, stacks, and previews.
+- `src/data/portfolio.ts`: identity, social accounts, original project archive, experience, and education.
+- `public/projects/`: existing project screenshots. The Instagram Comment Picker card intentionally uses a labeled illustrative interface until a screenshot is provided. Its technology stack has not been invented.
+- `src/components/Skills.tsx` and `Approach.tsx`: grouped technologies and engineering process.
+- `src/app/globals.css`: design tokens, layout, responsive breakpoints, and reduced-motion support.
 
-## Learn More
+The existing homepage, `#work` anchor, project links, email contact, and Google Analytics, Microsoft Clarity, and Vercel Analytics integrations are preserved. The original site did not have a contact form backend or theme switcher.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment configuration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Copy `.env.example` to `.env.local` and set:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `NEXT_PUBLIC_SITE_URL`: the real public origin, such as `https://your-domain.com`. Required for correct canonical URLs, absolute social preview URLs, and sitemap entries. Vercel deployments can fall back to `VERCEL_PROJECT_PRODUCTION_URL`.
+- `CLARITY_PROJECT_ID`: your Microsoft Clarity project ID. Empty and placeholder values do not initialize Clarity.
 
-## Deploy on Vercel
+Do not deploy with the example domain. Without a configured origin, the sitemap intentionally contains no entries rather than publishing a made-up domain; Next.js may use localhost for generated social metadata in a local build.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```sh
+npm run lint
+npm run build
+npm run start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Metadata routes: `/robots.txt`, `/sitemap.xml`, `/opengraph-image`, `/twitter-image`, and `/icon.svg`. Social preview images are generated at build time. The existing Geist fonts use Next.js font optimization and require access to Google Fonts during a clean build.
+
+## Review
+
+Build, TypeScript, and lint validation passed during implementation. Local HTTP checks verified the homepage, project image assets, metadata routes, unknown-route 404 behavior, and internal section links.
+
+Desktop/mobile browser review remains pending: the session's browser runtime reported no connected browsers. Before publishing, review at 320, 390, 768, 1024, and 1440 px; check horizontal overflow, project dialogs (Escape, focus containment and restoration), mobile navigation, the archive, and reduced motion. Replace the Instagram placeholder URLs and confirm the final domain.
