@@ -1,44 +1,320 @@
-"use client";
-
+﻿"use client";
 import Image from "next/image";
-import { ArrowUpRight, Plus } from "lucide-react";
-import { motion } from "framer-motion";
+import { useRef, useState } from "react";
+import {
+  ArrowUpRight,
+  ArrowRight,
+  Github,
+  X,
+  MessageCircle,
+  Shuffle,
+  Check,
+  Plus,
+  Link2,
+  Store,
+  PackageCheck,
+  CreditCard,
+} from "lucide-react";
 import { portfolioData } from "@/data/portfolio";
+import {
+  featuredProjects,
+  type FeaturedProject,
+} from "@/data/featured-projects";
+
+function PickerPreview() {
+  return (
+    <div className="picker-preview">
+      <div className="picker-window">
+        <div className="picker-window-top">
+          <span className="picker-icon">
+            <MessageCircle size={19} />
+          </span>
+          <strong>Comment Picker</strong>
+          <span className="preview-pill">CONCEPT PREVIEW</span>
+        </div>
+        <p className="picker-kicker">LESS SCROLLING. MORE CELEBRATING.</p>
+        <h4>
+          One giveaway.
+          <br />
+          One lucky winner.
+        </h4>
+        <div className="sample-comments">
+          <div>
+            <span className="avatar">A</span>
+            <span>
+              Count me in! <i>♡</i>
+            </span>
+            <Check size={13} />
+          </div>
+          <div>
+            <span className="avatar">J</span>
+            <span>This is the one ✨</span>
+            <Check size={13} />
+          </div>
+          <div>
+            <span className="avatar">M</span>
+            <span>Fingers crossed!</span>
+            <Check size={13} />
+          </div>
+        </div>
+        <div className="picker-demo-button">
+          <Shuffle size={14} /> Pick a winner <ArrowRight size={14} />
+        </div>
+        <span className="picker-footnote">
+          Illustrative interface · not a product screenshot
+        </span>
+      </div>
+    </div>
+  );
+}
+
+function LinkHQPreview() {
+  return (
+    <div className="linkhq-preview" aria-hidden="true">
+      <span className="mono">LINKHQ.CO / PRODUCT OVERVIEW</span>
+      <div className="linkhq-wordmark"><Link2 size={32} /> LinkHQ</div>
+      <p>A home for your links.<br />A storefront for your ideas.</p>
+      <div className="linkhq-capabilities">
+        <span><Store size={17} /> Storefronts</span>
+        <span><PackageCheck size={17} /> Orders</span>
+        <span><CreditCard size={17} /> Payments</span>
+      </div>
+      <span className="mono">CREATOR COMMERCE · COMPANY PROJECT</span>
+    </div>
+  );
+}
 
 export default function Projects() {
-  const featured = portfolioData.projects.filter((project) => project.featured);
-  const archive = portfolioData.projects.filter((project) => !project.featured);
-
+  const [selected, setSelected] = useState<FeaturedProject>(
+    featuredProjects[0],
+  );
+  const dialog = useRef<HTMLDialogElement>(null);
+  const trigger = useRef<HTMLButtonElement | null>(null);
+  const open = (project: FeaturedProject, button: HTMLButtonElement) => {
+    setSelected(project);
+    trigger.current = button;
+    dialog.current?.showModal();
+  };
+  const close = () => dialog.current?.close();
+  const onClose = () => {
+    trigger.current?.focus();
+  };
   return (
-    <section id="work" className="bg-[#151512] py-24 text-[#f2f0e9] md:py-36">
-      <div className="shell">
-        <div className="mb-20 grid gap-8 lg:grid-cols-[.36fr_1fr]">
-          <p className="eyebrow text-[#d8ff3e]">Selected work / 01—03</p>
-          <h2 className="display max-w-4xl text-[clamp(3.8rem,8vw,8rem)] font-semibold">Products with<br /><span className="font-normal italic">a purpose.</span></h2>
+    <section id="projects" className="section shell">
+      <span id="work" className="anchor-alias" />
+      <div className="section-heading">
+        <div>
+          <p className="eyebrow">03 / SELECTED WORK</p>
+          <h2>
+            Ideas made <span className="serif accent">real.</span>
+          </h2>
         </div>
-        <div className="space-y-28 md:space-y-40">
-          {featured.map((project, index) => (
-            <motion.article key={project.title} initial={{ opacity: 0, y: 36 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .12 }} className="grid items-center gap-10 lg:grid-cols-2 lg:gap-20">
-              <a href={project.live} target="_blank" rel="noreferrer" className={`group relative block aspect-[4/3] overflow-hidden rounded-[1.5rem] bg-[#292925] project-media ${index % 2 ? "lg:order-2" : ""}`}>
-                {"image" in project && <Image src={project.image} alt={`${project.title} website preview`} fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover object-top transition duration-700 group-hover:scale-[1.025]" />}
-                <span className="absolute right-4 top-4 grid h-12 w-12 place-items-center rounded-full bg-[#d8ff3e] text-[#151512] transition-transform group-hover:rotate-45"><ArrowUpRight size={20} /></span>
-              </a>
-              <div className={index % 2 ? "lg:order-1" : ""}>
-                <p className="eyebrow mb-5 text-[#d8ff3e]">{`0${index + 1}`} / {project.eyebrow}</p>
-                <h3 className="display text-[clamp(3.4rem,6vw,6.5rem)] font-semibold">{project.title}</h3>
-                <p className="mt-8 max-w-xl text-xl leading-relaxed text-[#bab8b0]">{project.summary}</p>
-                {"contribution" in project && <p className="mt-5 max-w-xl leading-relaxed text-[#807f79]">{project.contribution}</p>}
-                <div className="mt-8 flex flex-wrap gap-2">{project.tech.map((tech) => <span key={tech} className="rounded-full border border-white/15 px-3 py-1.5 text-xs text-[#bab8b0]">{tech}</span>)}</div>
-                <a href={project.live} target="_blank" rel="noreferrer" className="link-line mt-9 inline-flex items-center gap-2 text-sm font-semibold">View live product <ArrowUpRight size={16} /></a>
-              </div>
-            </motion.article>
-          ))}
-        </div>
-        <div className="mt-32 border-t border-white/20 pt-8 md:mt-44">
-          <div className="mb-8 flex items-end justify-between"><div><p className="eyebrow mb-3 text-[#d8ff3e]">Archive</p><h3 className="text-3xl font-semibold tracking-[-.05em] md:text-5xl">More things I’ve built</h3></div><Plus className="hidden md:block" /></div>
-          {archive.map((project, index) => <a key={project.title} href={project.live} target="_blank" rel="noreferrer" className="group grid gap-3 border-t border-white/15 py-6 transition-colors hover:text-[#d8ff3e] md:grid-cols-[50px_.7fr_1fr_auto] md:items-center"><span className="eyebrow opacity-40">{String(index + 4).padStart(2, "0")}</span><strong className="text-xl tracking-[-.03em] md:text-2xl">{project.title}</strong><span className="text-sm text-[#807f79] group-hover:text-[#d8ff3e]">{project.eyebrow}</span><ArrowUpRight size={18} /></a>)}
-        </div>
+        <p className="muted section-intro">
+          Useful products. Real problems.
+          <br />A little of what I’ve been building.
+        </p>
       </div>
+      <div className="projects-grid">
+        {featuredProjects.map((project, index) => (
+          <article
+            className={`project-card ${project.theme}`}
+            key={project.title}
+          >
+            <button
+              className="project-preview"
+              aria-label={`Explore ${project.title} project details`}
+              onClick={(event) => open(project, event.currentTarget)}
+            >
+              {project.image ? (
+                <>
+                  <div className="browser-chrome">
+                    <span />
+                    <span />
+                    <span />
+                    <small>{new URL(project.live).hostname}</small>
+                  </div>
+                  <div className="screenshot-wrap">
+                    <Image
+                      src={project.image}
+                      alt={`${project.title} application screenshot`}
+                      fill
+                      sizes="(max-width: 760px) 92vw, 44vw"
+                      className="project-image"
+                    />
+                  </div>
+                </>
+              ) : project.theme === "linkhq" ? (
+                <LinkHQPreview />
+              ) : (
+                <PickerPreview />
+              )}
+              <span className="preview-open">
+                <ArrowUpRight size={18} />
+              </span>
+            </button>
+            <div className="project-copy">
+              <div className="project-eyebrow mono">
+                <span>{project.category}</span>
+                <span>0{index + 1}</span>
+              </div>
+              <h3>
+                <button onClick={(event) => open(project, event.currentTarget)}>
+                  {project.title}
+                </button>
+              </h3>
+              <p className="muted">{project.summary}</p>
+              <div className="tags">
+                {project.tech.slice(0, 4).map((tech) => (
+                  <span key={tech}>{tech}</span>
+                ))}
+                {project.tech.length > 4 && (
+                  <span>+{project.tech.length - 4}</span>
+                )}
+                {!project.tech.length && project.tags?.map((tag) => (
+                  <span key={tag}>{tag}</span>
+                ))}
+              </div>
+              <div className="project-actions">
+                <button onClick={(event) => open(project, event.currentTarget)}>
+                  Explore project <ArrowRight size={15} />
+                </button>
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`${project.title} live demo${project.placeholder ? " (placeholder link)" : ""}`}
+                >
+                  Live Demo <ArrowUpRight size={15} />
+                </a>
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`${project.title} GitHub${project.placeholder ? " (placeholder link)" : ""}`}
+                  >
+                    <Github size={15} /> GitHub
+                  </a>
+                )}
+              </div>
+              {project.placeholder && (
+                <p className="placeholder-note">
+                  Demo & GitHub links are placeholders.
+                </p>
+              )}
+            </div>
+          </article>
+        ))}
+      </div>
+      <details className="project-archive">
+        <summary>
+          <span>
+            <span className="mono">THE EXPLORATIONS CONTINUE</span>
+            <strong>
+              More things I’ve built <span className="archive-count">06</span>
+            </strong>
+          </span>
+          <Plus size={22} />
+        </summary>
+        <div className="archive-grid">
+          {portfolioData.projects
+            .filter((project) => !project.featured)
+            .map((project) => (
+              <a
+                key={project.title}
+                href={project.live}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div>
+                  <h3>{project.title}</h3>
+                  <p className="muted">{project.summary}</p>
+                  <span className="mono">{project.tech.join(" · ")}</span>
+                </div>
+                <ArrowUpRight size={18} />
+              </a>
+            ))}
+        </div>
+      </details>
+      <dialog
+        ref={dialog}
+        className="project-dialog"
+        onClose={onClose}
+        onClick={(event) => {
+          if (event.target === event.currentTarget) close();
+        }}
+        aria-labelledby="project-dialog-title"
+      >
+        <div className="dialog-content">
+          <button
+            autoFocus
+            onClick={close}
+            className="dialog-close"
+            aria-label="Close project details"
+          >
+            <X size={22} />
+          </button>
+          <p className="eyebrow">{selected.category}</p>
+          <h2 id="project-dialog-title">{selected.title}</h2>
+          <p className="large-copy">{selected.summary}</p>
+          {selected.image && (
+            <div className="dialog-image">
+              <Image
+                src={selected.image}
+                alt={`${selected.title} full application preview`}
+                width={1440}
+                height={1000}
+                sizes="(max-width: 760px) 90vw, 720px"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+          )}
+          <h3>The product</h3>
+          <p className="muted">{selected.context}</p>
+          <h3>Key features & engineering</h3>
+          <ul>
+            {selected.features.map((feature) => (
+              <li key={feature}>{feature}</li>
+            ))}
+          </ul>
+          {selected.tech.length > 0 && (
+            <>
+              <h3>Built with</h3>
+              <div className="tags">
+                {selected.tech.map((tech) => (
+                  <span key={tech}>{tech}</span>
+                ))}
+              </div>
+            </>
+          )}
+          <div className="button-row">
+            <a
+              className="button primary"
+              href={selected.live}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Demo <ArrowUpRight size={16} />
+            </a>
+            {selected.github && (
+              <a
+                className="button secondary"
+                href={selected.github}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Github size={16} /> GitHub
+              </a>
+            )}
+          </div>
+          {selected.placeholder && (
+            <p className="placeholder-note">
+              Links are placeholders. The card shows an illustrative interface;
+              implementation details will be added when available.
+            </p>
+          )}
+        </div>
+      </dialog>
     </section>
   );
 }

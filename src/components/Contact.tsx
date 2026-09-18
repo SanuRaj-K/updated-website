@@ -1,15 +1,41 @@
-import { ArrowUpRight } from "lucide-react";
-import { portfolioData } from "@/data/portfolio";
-
+﻿import { ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
+import { portfolioData as data } from "@/data/portfolio";
 export default function Contact() {
   return (
-    <section id="contact" className="bg-[#d8ff3e] py-24 md:py-36">
-      <div className="shell">
-        <p className="eyebrow">Contact / next move</p>
-        <h2 className="display mt-10 max-w-6xl text-[clamp(4.2rem,10vw,10rem)] font-semibold">Let’s make<br /><span className="font-normal italic">something useful.</span></h2>
-        <div className="mt-16 grid gap-8 border-t border-black/25 pt-7 md:grid-cols-2 md:items-end">
-          <p className="max-w-lg text-lg leading-relaxed">Have a product challenge, a role, or an idea worth exploring? I’m always happy to have a thoughtful conversation.</p>
-          <div className="flex flex-wrap gap-3 md:justify-end"><a href={`mailto:${portfolioData.email}`} className="inline-flex items-center gap-3 rounded-full bg-[#151512] px-6 py-3.5 text-sm font-semibold text-[#f2f0e9]">Send an email <ArrowUpRight size={16} /></a><a href={portfolioData.social.linkedin} target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 rounded-full border border-black/35 px-6 py-3.5 text-sm font-semibold">LinkedIn <ArrowUpRight size={16} /></a></div>
+    <section id="contact" className="section shell">
+      <div className="contact-panel">
+        <p className="eyebrow">
+          <span className="status-dot" /> LET’S MAKE SOMETHING MATTER
+        </p>
+        <h2>
+          Have a product idea
+          <br />
+          or opportunity?
+          <br />
+          <span className="accent">Let’s build it.</span>
+        </h2>
+        <p className="muted">
+          A new product, an interesting challenge, or a team doing meaningful
+          work.
+          <br className="desktop-break" /> I’d love to hear what you have in
+          mind.
+        </p>
+        <a href={`mailto:${data.email}`} className="button primary">
+          Let’s start a conversation <ArrowUpRight size={17} />
+        </a>
+        <a href={`mailto:${data.email}`} className="contact-email">
+          {data.email}
+        </a>
+        <div className="contact-social">
+          <a href={data.social.linkedin} target="_blank" rel="noreferrer">
+            <Linkedin size={16} /> LinkedIn <ArrowUpRight size={13} />
+          </a>
+          <a href={data.social.github} target="_blank" rel="noreferrer">
+            <Github size={16} /> GitHub <ArrowUpRight size={13} />
+          </a>
+          <a href={`mailto:${data.email}`}>
+            <Mail size={16} /> Email <ArrowUpRight size={13} />
+          </a>
         </div>
       </div>
     </section>
