@@ -15,7 +15,7 @@ export default function About() {
             actually use.
           </p>
           <p className="muted">
-            I’m SanuRaj, a Product Engineer based in Kerala, India. I work across
+            I’m SanuRaj, a Fullstack Engineer based in Kerala, India. I work across
             design, development, and deployment, connecting the details of an
             interface with the systems that make it useful.
           </p>

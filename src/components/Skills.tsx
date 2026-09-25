@@ -11,6 +11,7 @@ const groups = [
       "JavaScript",
       "Tailwind CSS",
       "Material UI",
+      "Shopify",
       "Redux Toolkit",
       "Tanstack Query",
       "Framer Motion",

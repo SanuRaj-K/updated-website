@@ -44,7 +44,7 @@ export default function Navbar() {
           <span className="brand-mark">
             s<span>.</span>
           </span>
-          Sanu Raj<span className="brand-role"> / Product Engineer</span>
+          Sanu Raj<span className="brand-role"> / Fullstack Engineer</span>
         </a>
         <div className="desktop-nav">
           {links.map((link) => (

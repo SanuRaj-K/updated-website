@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const alt =
-  "Sanu Raj — Product Engineer. Thoughtfully designed. End-to-end engineered.";
+  "Sanu Raj — Fullstack Engineer. Thoughtfully designed. End-to-end engineered.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -33,7 +33,7 @@ export default function Image() {
         <span
           style={{ fontSize: 100, letterSpacing: "-5px", lineHeight: 1.05 }}
         >
-          Product
+          Fullstack
         </span>
         <span
           style={{

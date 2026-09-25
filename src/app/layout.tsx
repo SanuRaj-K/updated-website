@@ -24,10 +24,10 @@ export const metadata: Metadata = {
   metadataBase: siteUrl ? new URL(siteUrl) : undefined,
   title: `${portfolioData.name} — ${portfolioData.role}`,
   description:
-    "Sanu Raj is a Product Engineer and Full-Stack Developer building modern web applications, AI-powered products, and backend systems with Next.js, Python, and Azure.",
+    "Sanu Raj is a Fullstack Engineer building modern web applications, AI-powered products, and backend systems with Next.js, Python, and Azure.",
   keywords: [
     "Sanu Raj",
-    "Product Engineer",
+    "Fullstack Engineer",
     "Full-Stack Developer",
     "React",
     "Next.js",
@@ -40,13 +40,13 @@ export const metadata: Metadata = {
     title: `${portfolioData.name} — ${portfolioData.role}`,
     description: portfolioData.tagline,
     type: "website",
-    siteName: "Sanu Raj — Product Engineer",
+    siteName: "Sanu Raj — Fullstack Engineer",
     locale: "en_IN",
     url: siteUrl,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sanu Raj — Product Engineer",
+    title: "Sanu Raj — Fullstack Engineer",
     description: portfolioData.tagline,
   },
 };

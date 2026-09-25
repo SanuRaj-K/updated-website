@@ -27,7 +27,7 @@ export default function Hero() {
           </p>
           <p className="hero-intro">Hey, I’m Sanu Raj.</p>
           <h1>
-            Product
+            Fullstack
             <br />
             <span>
               Engineer<span className="accent">.</span>
@@ -47,6 +47,14 @@ export default function Hero() {
             </a>
             <a href="#contact" className="button secondary">
               Let’s Talk <ArrowUpRight size={16} />
+            </a>
+            <a
+              href={data.resume}
+              className="button secondary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Résumé <ArrowUpRight size={16} />
             </a>
           </div>
           <div className="hero-social">

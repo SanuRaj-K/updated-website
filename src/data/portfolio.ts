@@ -1,12 +1,14 @@
 export const portfolioData = {
   name: "Sanu Raj",
   initials: "SR",
-  role: "Product Engineer",
+  role: "Fullstack Engineer",
   tagline:
     "I design and build dependable digital products—from thoughtful interfaces to the systems behind them.",
   email: "sanurajk55@gmail.com",
+  resume:
+    "https://drive.google.com/file/d/1CPLP2UzuL2Ni7-HPh7dKaW6VKWexokox/view?usp=sharing",
   location: "Kerala, India",
-  availability: "Open to product engineering opportunities",
+  availability: "Open to fullstack engineering opportunities",
   about:
     "I’m a product-minded engineer who enjoys turning complex workflows into clear, useful software. My work spans interface design, frontend architecture, APIs, and data—always with an eye on the people using the product.",
   social: {
