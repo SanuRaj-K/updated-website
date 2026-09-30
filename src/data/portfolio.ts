@@ -94,7 +94,7 @@ export const portfolioData = {
       featured: false,
     },
     {
-      title: "Edusto",
+      title: "Edusto-shopify",
       eyebrow: "E-commerce platform",
       summary:
         "A storefront with checkout, order tracking, inventory, and sales management.",
