@@ -88,6 +88,22 @@ export const featuredProjects: FeaturedProject[] = [
     ),
     theme: "picker",
   },
+  {
+    title: "Taskly",
+    category: "TASK TRACKER · PRODUCTIVITY TOOL",
+    summary: "A little clarity for your day, one task at a time.",
+    context:
+      "A task tracker for organizing daily work, setting priorities, and keeping track of progress in a focused workspace.",
+    features: [
+      "Task organization and priority setting",
+      "Progress tracking to keep daily work in focus",
+      "Light and dark themes with a saved preference",
+    ],
+    tech: [],
+    tags: ["Task management", "Priorities", "Productivity"],
+    live: "https://task-tracker-kohl-sigma-41.vercel.app/",
+    theme: "taskly",
+  },
   ...existing
     .filter(
       (project) =>

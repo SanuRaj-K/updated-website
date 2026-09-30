@@ -14,6 +14,9 @@ import {
   Store,
   PackageCheck,
   CreditCard,
+  ListTodo,
+  Flag,
+  ChartNoAxesCombined,
 } from "lucide-react";
 import { portfolioData } from "@/data/portfolio";
 import {
@@ -64,6 +67,22 @@ function PickerPreview() {
           Illustrative interface · not a product screenshot
         </span>
       </div>
+    </div>
+  );
+}
+
+function TasklyPreview() {
+  return (
+    <div className="taskly-preview" aria-hidden="true">
+      <span className="mono">TASK TRACKER / PRODUCT OVERVIEW</span>
+      <div className="taskly-wordmark"><ListTodo size={32} /> Taskly</div>
+      <p>A little clarity for your day.<br />A little more focus.</p>
+      <div className="taskly-capabilities">
+        <span><ListTodo size={17} /> Tasks</span>
+        <span><Flag size={17} /> Priorities</span>
+        <span><ChartNoAxesCombined size={17} /> Progress</span>
+      </div>
+      <span className="mono">PRODUCTIVITY · ONE TASK AT A TIME</span>
     </div>
   );
 }
@@ -145,6 +164,8 @@ export default function Projects() {
                 </>
               ) : project.theme === "linkhq" ? (
                 <LinkHQPreview />
+              ) : project.theme === "taskly" ? (
+                <TasklyPreview />
               ) : (
                 <PickerPreview />
               )}
