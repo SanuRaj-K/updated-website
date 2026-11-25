@@ -27,7 +27,7 @@ export default function Hero() {
           </p>
           <p className="hero-intro">Hey, I’m Sanu Raj.</p>
           <h1>
-            Fullstack
+            Software
             <br />
             <span>
               Engineer<span className="accent">.</span>
